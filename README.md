@@ -12,15 +12,25 @@ A thorough examination on the dataset revealed that the data needed some cleanin
 
 ## Data Cleaning
 To make the cleaning process easier, the dataset was first converted into a table called ‘FashionTable’. Below is a step-by-step process I followed in carrying out the data cleaning.
+
 i)	New index: A consistent index was created and the former one deleted. This new index was created using the ROWS() function and was called ‘ID’.
+
 ii)	Split Column: The ‘Deatils’ column was then split into two columns. The first column was corrected to ‘Details’, while the second the column was renamed ‘Color’. The colors were simply extracted from the Details columns of categories that has colors (which are footwears, nightwears, Indianwears, and Westernwears).
+
 iii)	Trim cells (Category column): The Category column has the word “women” attached to every cell. This is redundant so I cleaned it off using the SUBSTITUTE() function. Then I inserted spaces in-between words to make them readable. 
+
 iv)	Trim cells (Discount column): I removed the “off” attached to every cells in the column using the LEFT() function.
+
 v)	Trim cells (Sizes column): I removed the word “sizes” from each cell as it’s redundant.
+
 vi)	Format columns (MRP column): I formatted the MRP column to Rupees currency by first using the SUBSTITUTE(), CLEAN(), TRIM(), and VALUE() function. Thereafter, I clicked the Rp option in the Accounting dropdown list.
+
 vii)	Format columns (all other columns): I changed the format of every other columns to their necessary formats.
+
 viii)	Rename Columns: “Sizes” was renamed to “Sizes Available”, “Sellprice” renamed to “Selling Price”, “MRP” renamed to “Max. Retail Price”, “BrandName” renamed to “Brand Name”.
+
 ix)	Filter columns: I removed rows that have their Brand Name as Nan (which was used to represent null values). Also, rows with errors in the Max. Retail Price and Color columns were removed. The affected columns were necessary for my analysis, therefore they ought to be complete if I must gain useful insight from the data.
+
 x)	Remove columns: For this analysis, I realized that the Details and Sizes Available columns won’t be needed so I removed them.
 Below is a screenshot of what the final table looks like:
 
