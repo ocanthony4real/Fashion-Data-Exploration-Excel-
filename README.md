@@ -36,11 +36,6 @@ Below is a screenshot of what the final table looks like:
 
  ![EP1-2](https://user-images.githubusercontent.com/101093568/186724996-48c17d12-bff1-4264-92ea-abbf59d0c470.png)
  
-## Dashboard
-For more flexibility, I first created a template of my dashboard using Power Point.
- Then I proceeded to drawing insights from my cleaned data. I plotted various charts with the data on the template. The final result is shown below:
-
-![Dataset](https://user-images.githubusercontent.com/101093568/186725165-db7acb41-d7b5-4cc7-b24f-c2d86171f7a9.png)
 
   
 
